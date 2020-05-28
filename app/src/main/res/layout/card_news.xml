@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvTitNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondoTitulo"
+            android:gravity="center"
+            android:text="XXX"
+            android:textColor="@color/colorTitutlo"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <ImageView
+                android:id="@+id/ivImagenNews"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_weight="5"
+                android:src="@drawable/nodis" />
+            <TextView
+                android:id="@+id/tvTextoNews"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@color/cardview_light_background"
+                android:text="LABEL 1"
+                android:textColor="@color/colorTexto" />
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvURLNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/cardview_dark_background"
+            android:text="LABEL 1"
+            android:textColor="@color/colorTitutlo" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
